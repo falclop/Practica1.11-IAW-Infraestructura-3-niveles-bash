@@ -67,7 +67,7 @@ wp option update whl_page $nombre_secreto --path=$WP_PATH --allow-root
 # wp plugin deactivate wps-hide-login
 
 # Configuramos la variable para cargar bien los estilos
-sed -i "/COLLATE/a $_SERVER['HTTPS'] = 'on';" /var/www/html/wp-config.php
+sed -i "/COLLATE/a \$_SERVER['HTTPS'] = 'on';" /var/www/html/wp-config.php
 
 # Cambiamos a todo los permisos de www-data
 chown -R www-data:www-data /var/www/html
