@@ -21,3 +21,5 @@ chown nobody:nogroup /var/www/html
 cp ../nfs/exports /etc/exports
 
 sed -i "s#FRONTEND_NETWORK#$FRONTEND_NETWORK#" /etc/exports
+
+systemctl restart nfs-kernel-server
