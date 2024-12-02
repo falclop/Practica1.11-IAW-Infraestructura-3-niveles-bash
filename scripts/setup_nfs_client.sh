@@ -12,6 +12,7 @@ apt update
 #Actualiza el paquete
 apt upgrade -y
 
+#Instalamos el cliente
 sudo apt install nfs-common -y
 
 #Montamos la carpeta en el directorio, con df -h podemos comprobarlo
