@@ -71,4 +71,3 @@ sed -i "/COLLATE/a $_SERVER['HTTPS'] = 'on';" /var/www/html/wp-config.php
 
 # Cambiamos a todo los permisos de www-data
 chown -R www-data:www-data /var/www/html
-
