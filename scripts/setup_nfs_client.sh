@@ -21,5 +21,5 @@ mount $NFS_SERVER_IP:/var/www/html /var/www/html
 #Creamos una copia de seguridad de fstab
 cp /etc/fstab /etc/fstab.bak
 
-#Creamos una entrada de acceso directo a fstab para garantizar que se monte al arranque de cada máquina
+#Creamos una entrada de acceso directo a fstab para garantizar que se monte al arranque de cada máquina mount -a
 sed -i '/UEFI/a 172.31.84.55:/var/www/html /var/www/html nfs rsize=8192,wsize=8192,timeo=14,intr,noexec,nosuid' /etc/fstab
